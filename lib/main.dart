@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'features/auth/login/login_page.dart';
-import 'features/home/dummy_page.dart';
 import 'features/home/home_page.dart';
 
 void main() {
@@ -15,7 +14,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // tắt banner debug
-
       // App kiểu Material Design
       title: 'UI Practice', // title hiển thị khi app switch task
       // Theme định nghĩa style chung cho toàn app
@@ -36,11 +34,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (_) => const LoginPage(), // màn login
         '/home': (_) => const HomePage(), // màn home
-        '/profile': (_) =>
-            const DummyPage(title: 'Profile'), // dummy page profile
-        '/settings': (_) =>
-            const DummyPage(title: 'Settings'), // dummy page settings
-        '/about': (_) => const DummyPage(title: 'About'), // dummy page about
       },
     );
   }
